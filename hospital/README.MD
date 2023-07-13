@@ -5,7 +5,7 @@ You would still need to add a lot more logic around patient records, scheduling,
 ## Patient
 The Patient class stores basic information like name, address and phone number.
 ## Staff
-The Staff base class defines name and role, extended by `Doctor` and Nurse subclasses to add speciality and override role.
+The Staff base class defines name and role, extended by `Doctor` and `Nurse` subclasses to add speciality and override role.
 
 The Appointment class links together a Patient, Doctor and timing.
 
