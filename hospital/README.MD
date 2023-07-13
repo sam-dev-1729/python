@@ -6,7 +6,7 @@ You would still need to add a lot more logic around patient records, scheduling,
 The Patient class stores basic information like name, address and phone number.
 ## Staff
 The Staff base class defines name and role, extended by `Doctor` and `Nurse` subclasses to add speciality and override role.
-# Appointment
+## Appointment
 The Appointment class links together a **Patient**, **Doctor** and **timing**.
 
 This allows the Hospital class to create objects representing people and appointments at the hospital. The relationships between the classes enable modeling a hospital system with **OOP**.
