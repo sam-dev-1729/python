@@ -1,26 +1,20 @@
-from patients  import Patient
-from  staff import Doctor,Nurse,Staff
-from appointments import Appointment
+from departments import Department
+from patients import Patient
+from staff import Staff
+
 
 class Hospital:
 
-    def __init__(self, name):
+    def __init__(self, name, address, phone, website):
         self.name = name
-        self.patients = []
-        self.staff = []
-        self.appointments = []
-    
-    def add_patient(self, patient):
-        self.patients.append(patient)
-        
-    def add_staff(self, staff_member):
-        self.staff.append(staff_member)
+        self.address = address
+        self.phone = phone
+        self.website = website
+        self.department = []
 
-    def book_appointment(self, patient, doctor, appointment_date, appointment_time):
-        appointment = Appointment(patient, doctor, appointment_date, appointment_time)
-        self.appointments.append(appointment)
-        print("Appointment booked for {} on {} at {}".format(patient.name, appointment_date, appointment_time))
-        
+    def add_department(self, name_of_department):
+        self.department.append(name_of_department)
+
 # Example usage        
 my_hospital = Hospital("City Hospital")
 
