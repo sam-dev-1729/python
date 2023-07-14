@@ -10,7 +10,7 @@ class Surgery(Patient,Doctor):
 def surgery(self,patient,doctor,kind_of_surgery,cost_of_surgery):
         surgery= Surgery(kind_of_surgery,cost_of_surgery,doctor,patient)
         self.surgerys.append(surgery)
-        print("Surgery done for {} by {} costs {}".format(patient.name,doctor.name,surgery.cost_of_surgery))
+        print("Surgery done for {} by {} costs {}".format(patient.name,doctor.name,surgery.cost_of_surgery)) 
 
 
         
